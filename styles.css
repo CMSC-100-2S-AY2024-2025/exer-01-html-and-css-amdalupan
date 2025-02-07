@@ -1,0 +1,18 @@
+.header {
+    display: flexbox;
+    background-color: cornflowerblue;
+    
+    text-align: center;
+    justify-content: center;
+}
+
+.body .body1 {
+    display: inline-block;
+    width: 300;
+    height: 300;
+    background-color: blue;
+}
+
+.footer {
+    background-color: cornflowerblue;
+}
