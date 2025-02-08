@@ -1,18 +1,238 @@
-.header {
-    display: flexbox;
-    background-color: cornflowerblue;
-    
-    text-align: center;
+body {
+    margin: 0;
+}
+
+#background {
+    width: 100%;
+    position: fixed;
+    object-fit: contain;
+    z-index: -1;
+}
+
+#navigation_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+#navigation_bar > .box {
+    margin-left: 10%;
+}
+
+#featured_photo {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+    background-image: url(fontaine.png);
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.body .body1 {
-    display: inline-block;
-    width: 300;
-    height: 300;
-    background-color: blue;
+.pfp {
+    aspect-ratio: 1/1;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: dotted;
+    border-color: royalblue;
+    border-radius: 50%;
+
+    background-image: url(self.jpeg);
+    background-position: center;
+    background-size: 110%;
 }
 
-.footer {
+#name {
+    aspect-ratio: 48/9;
+    width: 30%;
+}
+
+.box {
+    aspect-ratio: 32/9;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
     background-color: cornflowerblue;
+
+    border-style:outset;
+    border-width: 0.5vw;
+    border-color: #c9a47c;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+.button:active {
+    color: white;
+}
+
+.section_head {
+    aspect-ratio: 8/1;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: dashed;
+    border-width: 0.5vw;
+    border-color: white;
+
+    border-left: none;
+    border-right: none;
+
+    background-color: royalblue;
+}
+
+.section_body {
+    aspect-ratio: 16/9;
+    width: 100%;
+
+    display: flex;
+}
+
+.parallax {
+    aspect-ratio: 16/9;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax1 {
+    aspect-ratio: 8/9 !important;
+    background-image: url(furina_img.png);
+}
+
+#parallax2 {
+    background-image: url(fontaine2.png);
+}
+
+#parallax3 {
+    aspect-ratio: 8/9 !important;
+    background-image: url(furina_img2.png);
+}
+
+.project_images {
+    width: 60%;
+    height: 80%;
+    align-self: center;
+}
+
+#pySweeper_images {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+#pySweeper_images > img {
+    object-fit: contain;
+    width: 20%;
+}
+
+#ace_of_space_images {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-right: 5%;
+}
+
+#ace_of_space_images > img {
+    object-fit: contain;
+}
+
+.project_description {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.project_description > .title {
+    width: 50%;
+}
+
+.project_description > .body {
+    width: 75%;
+}
+
+.text {
+    margin: 10%;
+}
+
+#desc {
+    order: -1;
+}
+
+#skills_body {
+    display: flex;
+    align-items: center;
+}
+
+#skills_body > .box {
+    width: 40%;
+    height: 80%;
+
+    margin-left: 10%;
+}
+
+#autobiography_body {
+    aspect-ratio: 8/9;
+    width: 100%;
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#autobiography_body > .box {
+    width: 30%;
+    height: 80%;
+
+    margin-right: 10%;
+}
+
+#footer {
+    justify-content: space-evenly;
+}
+
+#footer > .pfp {
+    width: 10% !important;
+}
+
+#footer > .text {
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+#footer > .box {
+    aspect-ratio: 48/9 !important;
+    font-size: 1vw;
 }
