@@ -236,3 +236,14 @@ body {
     aspect-ratio: 48/9 !important;
     font-size: 1vw;
 }
+
+#pages_link {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+#pages_link:hover {
+    color: cornflowerblue;
+}
